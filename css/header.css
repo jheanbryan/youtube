@@ -1,0 +1,124 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.sub-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+.icon-burguer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.icon-burguer div{
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+}
+.container-logo{
+    max-width: 90px;
+}
+.logo{
+    width: 100%;
+}
+
+
+.none{
+    display: none;
+}
+.section-search{
+    flex: 1;
+}
+.container-search{
+    display: flex;
+    flex-direction: row;
+    max-width: 640px;
+    flex: 1;
+}
+.search-bar{
+    display: flex;
+    height: 40px;
+    border: 1px solid #808080;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2px;
+    position: relative;
+    width: 100%;
+}
+.input-search{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+}
+.icon{
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+}
+.keyword{
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container-pesquisar{
+    background-color: #dcdcdc;
+    max-height: 40px;
+    padding: 0 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid #808080;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+
+}
+.container-pesquisar img{
+    height: 40px;
+}
+.search-voice{
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline-start: 5px;
+}
+.search-voice img{
+    height: 20px;
+}
+
+
+.container-icon-config{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.container-icon-config div{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.btn-login{
+    margin-inline-start: 20px;
+    color: #0000ff;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.icon-login{
+    width: 30px;
+}
