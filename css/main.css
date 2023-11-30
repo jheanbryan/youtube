@@ -22,3 +22,21 @@
 .icon-nav-bar{
     width: 24px;
 }
+
+
+.container-tags{
+    display: flex;
+    margin-left: 100px;
+    gap: 15px;
+    font-size: 0.9em;
+}
+.tag{
+    background-color: gainsboro;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
