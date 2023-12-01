@@ -10,7 +10,9 @@ header{
     gap: 5px;
     justify-content: center;
 }
-
+.sub-container div{
+    cursor: pointer;
+}
 
 .icon-burguer{
     display: flex;
@@ -122,3 +124,5 @@ header{
 .icon-login{
     width: 30px;
 }
+
+

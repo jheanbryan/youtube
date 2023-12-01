@@ -35,8 +35,76 @@
     color: black;
     padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .selected{
     background-color: black;
     color: white;
+}
+
+
+.container-videos{
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-video{
+    cursor: pointer;
+    max-width: 350px;
+    margin-top: 50px;
+}
+.card-video:hover .more-info{
+    display: flex;
+}
+.card-video div{
+    margin: 2px;
+}
+.video-cover{
+    max-width: 100%;
+}
+.video-cover img{
+    width: 100%;
+    border-radius: 15px;
+}
+.container-info-video{
+    display: flex;
+    gap: 5px;
+}
+.photo-cover img{
+    width: 36px;
+    border-radius: 50%;
+}
+.info-video{
+    display: flex;
+    flex-direction: column;
+}
+.title-video{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    -webkit-line-clamp: 2;
+}
+.channel-name{
+    color: gray;
+    margin-top: 3px;
+}
+.views-time{
+    margin-top: 3px;
+    color: gray;
+}
+.more-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: relative;
+    right: 5px;
+    z-index: 2;
+    display: none;
+}
+.more-info div{
+    width: 2.5px;
+    height: 2.5px;
+    border-radius: 50%;
+    background-color: #000;
 }
