@@ -62,10 +62,21 @@
 }
 .video-cover{
     max-width: 100%;
+    position: relative;
 }
 .video-cover img{
     width: 100%;
     border-radius: 15px;
+}
+.duration{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 3px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: 10px;
+    right: 6px;
 }
 .container-info-video{
     display: flex;
