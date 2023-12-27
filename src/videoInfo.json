@@ -2,9 +2,37 @@
     {
         "channelName": "hannabiYaki",
         "videoTitle": "[FWR] MINECRAFT 1.16+ IN 1:42! (Set Seed Glitchless)",
-        "videoCover": "hannabiYaki-channel.jpg",
-        "photoCover": "hannabiYaki-videoCover.jpg",
+        "videoCover": "./assets/channels-img/hannabiYaki/hannabiYaki-videoCover.jpg",
+        "photoCover": "./assets/channels-img/hannabiYaki/hannabiYaki-channel.jpg",
         "views": "22 mil",
-        "time": "há 3 semanas"
+        "time": "há 3 semanas",
+        "videoDuration": "3:33"
+    },
+    {
+        "channelName": "Alexa Real",
+        "videoTitle": "experiment v15",
+        "videoCover": "./assets/channels-img/alexa-real/alexa-real-videoCover.jpg",
+        "photoCover": "./assets/channels-img/alexa-real/alexa-real-channel.jpg",
+        "views": "6 mi",
+        "time": "há 2 anos",
+        "videoDuration": "1:11"
+    },
+    {
+        "channelName": "hannabiYaki",
+        "videoTitle": "[FWR] MINECRAFT 1.16+ IN 1:42! (Set Seed Glitchless)",
+        "videoCover": "./assets/channels-img/hannabiYaki/hannabiYaki-videoCover.jpg",
+        "photoCover": "./assets/channels-img/hannabiYaki/hannabiYaki-channel.jpg",
+        "views": "22 mil",
+        "time": "há 3 semanas",
+        "videoDuration": "3:33"
+    },
+    {
+        "channelName": "Alexa Real",
+        "videoTitle": "experiment v15",
+        "videoCover": "./assets/channels-img/alexa-real/alexa-real-videoCover.jpg",
+        "photoCover": "./assets/channels-img/alexa-real/alexa-real-channel.jpg",
+        "views": "6 mi",
+        "time": "há 2 anos",
+        "videoDuration": "1:11"
     }
 ]
