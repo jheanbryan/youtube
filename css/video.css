@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    max-width: 900px;
+    margin-inline: 15px;
+    align-items: center;
+}
+.container-video{
+    background-color: red;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+.container-video video{
+    width: 100%;
+}

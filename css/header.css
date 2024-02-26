@@ -73,8 +73,7 @@ header{
     transform: translateY(-50%);
 }
 .container-pesquisar{
-    background-color: #dcdcdc;
-    max-height: 40px;
+        max-height: 40px;
     padding: 0 10px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -87,7 +86,6 @@ header{
     height: 40px;
 }
 .search-voice{
-    background-color: #dcdcdc;
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -95,6 +93,9 @@ header{
     align-items: center;
     justify-content: center;
     margin-inline-start: 5px;
+}
+.search-voice:hover{
+    background-color: #dcdcdc;
 }
 .search-voice img{
     height: 20px;
