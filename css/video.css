@@ -1,8 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+}
 main{
     display: flex;
-    max-width: 900px;
-    margin-inline: 15px;
-    align-items: center;
+    justify-self: center;
+    gap: 15px;
+}
+.container-left{
+    max-width: 1200px;
+    width: 1200px;
+    background-color: black;
+    padding: 10px;
 }
 .container-video{
     background-color: red;
@@ -13,4 +26,32 @@ main{
 }
 .container-video video{
     width: 100%;
+}
+
+.views-time{
+    margin-top: 3px;
+    color: #808080;
+}
+
+
+.card-video{
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+}
+.container-thumb{
+    max-width: 168px;
+}
+.container-thumb img{
+    width: 100%;
+    border-radius: 5px;
+}
+.container-video-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-video-infos{
+    display: flex;
+    flex-direction: column;
 }
