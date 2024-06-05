@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/keyframes.css">
 </head>
 <body>
     <header>
@@ -59,16 +60,38 @@
     <main>
         <section class="container-left">
             <div class="container-video">
-                <video>
-                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                <video  id="video" src="./musica.mp4">
+                    Seu navegador não suporta o elemento de vídeo.
                 </video>
-                <div class="low-bar">
-                    <div class="icons-left">
+                
 
+
+                <div class="div-float-elements">
+                    <div class="div-progress-bar">
+                        <input type="range" min="0" max="" name="" value="0" id="progress-bar">
                     </div>
 
-                    <div class="icons-right">
-                         
+                    <div class="low-bar">
+                        <div class="video-controls">
+                            <!--<img src="assets/video-controls/backward-step-solid.svg" alt=""> -->
+                            <img id="play-button" src="assets/video-controls/play-solid.svg" alt="">
+                            <img src="assets/video-controls/forward-step-solid.svg" alt="">
+                            <div class="div-volume">
+                                <img id="volume-icon" src="assets/video-controls/volume.png" alt="" class="volume-off">
+
+                                <div id="bar-diagonal"></div>
+                            </div>
+                            <input type="range" min="1" max="100" name="" value="50" id="radio-volume">
+                            <div class="div-video-timing">
+                                <span id="now-time">0:00</span>
+                                <span>/</span>
+                                <span id="final-time"></span>
+                            </div>
+                        </div>
+    
+                        <div class="video-controls">
+                             
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,6 +115,6 @@
             </div>
         </section>
     </main>
-
+    <script defer src="src/video-controls.js"></script>
 </body>
 </html>

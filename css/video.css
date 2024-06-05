@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -10,22 +13,33 @@ main{
     display: flex;
     justify-self: center;
     gap: 15px;
+    max-width: 1320px;
+    width: 100%;
+    padding: 20px;
 }
 .container-left{
-    max-width: 1200px;
-    width: 1200px;
-    background-color: black;
-    padding: 10px;
+    width: 100%;
 }
 .container-video{
-    background-color: red;
-    padding: 5px;
     display: flex;
     align-items: center;
-    width: 800px;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+}
+.container-video:hover .video-controls,
+.container-video:hover .div-progress-bar{
+    display: flex;
 }
 .container-video video{
+    max-width: 645px;
+    max-height: 363px;
+    height: 100%;
     width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .views-time{
@@ -33,7 +47,98 @@ main{
     color: #808080;
 }
 
+.div-float-elements{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+.div-progress-bar{
+    display: none;
+}
+#progress-bar{
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: rgb(128, 128, 128, 0.5);
+    cursor: pointer; /* Cursor on hover */
+    height: 4px;
+}
+#progress-bar:hover{
+    height: 5px;
+}
+#progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 0px; /* Set a specific slider handle width */
+    height: 0px; /* Slider handle height */
+    background: #ff0000; /* Green background */
+    border-radius: 50%;
+    transition: 0.2s;
+}
+#progress-bar:hover::-webkit-slider-thumb{
+    width: 12px; /* Set a specific slider handle width */
+    height: 12px; /* Slider handle height */
+}
+.low-bar{
 
+}
+.video-controls{
+    display: none;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+.video-controls .div-volume{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.video-controls img, #play-button{
+    width: 15px;
+    cursor: pointer;
+}
+#volume-icon {
+    display: block;
+    width: 20px;
+}
+#bar-diagonal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(50deg);
+    transform-origin: center;
+    /*animation: growUp 1s forwards;*/
+    pointer-events: none;
+}
+
+#radio-volume{
+    -webkit-appearance: none;
+    outline: none;
+    background: linear-gradient(to right, #fff 50%, #ccc 50%); /* Gradiente dividido */
+    height: 3px;
+    width: 50px;
+    cursor: pointer;
+}
+#radio-volume::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: #fff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}
+
+.container-right{
+    background-color: aliceblue;
+    width: 100%;
+}
 .card-video{
     display: flex;
     cursor: pointer;
@@ -54,4 +159,10 @@ main{
 .div-video-infos{
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width:1000px){
+    main{
+        flex-direction: column;
+    }
 }
