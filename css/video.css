@@ -28,6 +28,7 @@ main{
     background-color: #000;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 .container-video:hover .video-controls,
 .container-video:hover .div-progress-bar{
@@ -41,7 +42,9 @@ main{
     border-radius: 10px;
     cursor: pointer;
 }
-
+.container-video video:focus{
+    outline: 0;
+}
 .views-time{
     margin-top: 3px;
     color: #808080;
@@ -136,8 +139,10 @@ main{
 }
 
 .container-right{
-    background-color: aliceblue;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .card-video{
     display: flex;
@@ -154,15 +159,24 @@ main{
 .container-video-info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+.div-title{
+    font-size: 0.8rem;
+    color: #000;
 }
 .div-video-infos{
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #808080;
 }
 
 @media screen and (max-width:1000px){
     main{
         flex-direction: column;
+    }
+    .container-video{
+        border-radius: 0;
     }
 }

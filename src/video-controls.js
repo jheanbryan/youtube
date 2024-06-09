@@ -14,6 +14,21 @@ const barDiagonal = document.querySelector('#bar-diagonal');
 let isPlaying = false;
 playButton.addEventListener('click', () => addPauseAndPlayVideo());
 video.addEventListener('click', () => addPauseAndPlayVideo());
+
+video.setAttribute('tabindex', '0');
+video.addEventListener('focus', () => {
+    window.addEventListener('keydown', handleKeyDown)
+})
+video.addEventListener('blur', () => {
+    window.removeEventListener('keydown', handleKeyDown)
+})
+
+function handleKeyDown(event) {
+    if (event.code == 'Space') {
+        addPauseAndPlayVideo();
+        event.preventDefault();
+    }
+}
 function addPauseAndPlayVideo() {
     if (isPlaying) {
         video.pause();
@@ -24,6 +39,7 @@ function addPauseAndPlayVideo() {
     }
     isPlaying = !isPlaying;
 }
+
 
 //volume Icon
 let volumeOn = true;
